@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Typing Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="difficulty-container">
+      <select class="difficulty-selector" id="difficulty">
+        <option value="0">Easy</option>
+        <option value="1" selected>Medium</option>
+        <option value="2">Hard</option>
+      </select>
+    </div>
+    <div class="container">
+      <h1>Speed Typer</h1>
+      <div class="timer-container">time left: <span id="timer">8s</span></div>
+      <div class="score-container">Score: <span id="score">0</span></div>
+      <div id="type-container">
+        <h4>Type the following:</h4>
+        <div class="word" id="word">Bienvenue</div>
+        <input type="text" placeholder="Type the word here ..." />
+      </div>
+    </div>
+    <div class="container">
+      <h2>Time ran out</h2>
+      <h4>your final score is <span id="final-score"></h4>
+        <button class="reload-btn" id="reload-btn" onclick="reload()">Reload</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

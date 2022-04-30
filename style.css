@@ -1,0 +1,90 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 80vh;
+  margin: 0;
+  background: rgb(32, 34, 36);
+  color: rgb(225, 225, 225);
+  font-size: 22px;
+}
+
+h1 {
+  color: white;
+  font-size: 36px;
+  padding: 6px;
+  background: rgb(32, 34, 34);
+  border-radius: 20px;
+}
+
+input {
+  height: 36px;
+  font-size: 26px;
+  border: none;
+  border-radius: 20px;
+  padding: 7px 22px;
+  margin-top: 10px;
+}
+
+.timer-container {
+  display: inline-block;
+  text-align: left;
+  width: 49%;
+}
+
+.score-container {
+  display: inline-block;
+  text-align: right;
+  width: 49%;
+}
+
+.difficulty-container {
+  width: 100%;
+  height: 50px;
+  background: rgb(63, 68, 73);
+}
+
+.difficulty-selector {
+  height: 30px;
+  font-size: 22px;
+  border: none;
+  padding: 3px 22px;
+  margin-top: 10px;
+  border-radius: 20px;
+}
+
+.container {
+  border-radius: 20px;
+
+  padding: 10px 30px 80px 30px;
+  margin: 250px auto 0 auto;
+  width: 500px;
+  background: rgb(43, 56, 69);
+  box-shadow: blue 0px 0px 0px 2px inset, rgb(43, 56, 69) 10px -10px 0px -3px,
+    rgb(31, 193, 27) 10px -10px, rgb(43, 56, 69) 20px -20px 0px -3px,
+    rgb(255, 217, 19) 20px -20px, rgb(43, 56, 69) 30px -30px 0px -3px,
+    rgb(255, 156, 85) 30px -30px, rgb(43, 56, 69) 40px -40px 0px -3px,
+    rgb(255, 85, 85) 40px -40px;
+}
+
+.word {
+  font-size: 44px;
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+.reload-btn {
+  padding: 8px 10px;
+  background: rgb(43, 56, 69);
+  border-radius: 20px;
+  font-size: 26px;
+  color: white;
+  border: 2px solid white;
+}
+
+.reload-btn:hover {
+  background: rgb(52, 68, 83);
+  cursor: pointer;
+}
