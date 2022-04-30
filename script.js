@@ -5,7 +5,34 @@ const word = document.getElementById("word");
 const input = document.querySelector("input");
 const gameContainer = document.getElementById("game-container");
 const endGameContainer = document.getElementById("reload-container");
-const words = ["hello", "house", "chiken", "written", "escape", "application"];
+const words = [
+  "hello",
+  "house",
+  "chiken",
+  "written",
+  "escape",
+  "application",
+  "sigh",
+  "tense",
+  "airplane",
+  "ball",
+  "pies",
+  "juice",
+  "warlike",
+  "bad",
+  "north",
+  "dependent",
+  "steer",
+  "silver",
+  "highfalutin",
+  "superficial",
+  "quince",
+  "eight",
+  "feeble",
+  "admit",
+  "drag",
+  "loving",
+];
 
 var countdown = setInterval(runTimer, 1000);
 var time = 10;
@@ -31,7 +58,7 @@ function showNextWord() {
     let nextWord = words[Math.floor(Math.random() * words.length)];
     return nextWord === word.innerText ? getWord() : nextWord;
   }
-  word.innerText = getWord(); 
+  word.innerText = getWord();
   input.value = "";
 }
 
@@ -40,12 +67,12 @@ function incrementScore() {
 }
 
 function runTimer() {
-    time--;
-    if (time >= 0) {
-      timer.innerText = time;
-    } else {
-      showEndGame();
-    }
+  time--;
+  if (time >= 0) {
+    timer.innerText = time;
+  } else {
+    showEndGame();
+  }
 }
 
 function showEndGame() {
